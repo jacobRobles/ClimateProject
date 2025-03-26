@@ -1,152 +1,81 @@
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0 auto;
-    min-width: 1000px;
-    max-width: 1400px;
-  }
-  
-  /* Layout */
-  
-  section {
-    float: left;
-    width: 50%;
-  }
-  
-  aside {
-    float: left;
-    width: 30%;
-  }
-  
-  nav {
-    float: left;
-    width: 20%;
-  }
-  
-  footer {
-    clear: both;
-  }
-  
-  header, section, aside, nav, footer {
-    padding: 20px;
-  }
-  
-  /* header and footer */
-  
-  header, footer {
-    border-top: 5px solid #a66;
-    border-bottom: 5px solid #a66;
-  }
-  
-  /* WRITE YOUR styling/typesetting CSS code BELOW HERE */
-
-  body{
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 13px;
-    line-height: 1rem;
-    word-spacing: 0.1rem;
-    letter-spacing: 0.1rem;
-
-
-  }
-  
-  h1, h2{
-    font-family: 'Playfair Display', serif;
-    font-size: 23px;
-    word-spacing: 0.2rem;
-    letter-spacing: 0.1rem;
-  }
-  header h1{
-    font-family: 'Playfair Display',serif;
-    font-size: 35px;
-    text-align: center;
-    word-spacing: 0.2rem;
-    letter-spacing: 0.4rem;
-  }
-
-  section h2 + p{
-    text-indent: 1.25rem;
-  }
-
-  a {
-    color:#a66 ;
-    text-decoration: underline;
-    outline: none;
-    
-
-  }
-
-  a:visited {
-    color: rgb(110, 27, 27);
-
-  }
-  a:hover, a:focus {
-    color:rgb(207, 151, 151);
-    text-decoration: none;
-  }
-
-a[href^="http"]::after {
-  content: ""; 
-  display: inline-block;
-  width: 10px; 
-  height: 10px;
-  background-image: url('external-link-52.png'); 
-  background-size: contain; 
-  background-repeat: no-repeat;
-  margin-left: 0.25rem; 
-  vertical-align: center; 
+    font-family: 'Roboto', sans-serif;
 }
-
-
-  a:active{
-    color: rgb(244, 68, 68);
-    font-weight: bold;
-
-
-  }
-
-  ul li::before {
-    content: "→ "; 
-    color: #a66; 
-    font-weight: bold;
-    margin-right: 0.5rem;
-    }
-  ul,ol {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding-left: 0.5rem;
-    list-style: none;
-  }
-
-  li{
-    line-height: 1.6;
-    margin-bottom: 0.5rem;
-  }
-
-  nav{
-    background-color:#ffffff;
-    padding: 2rem;
-    border-radius: 50px;
-    list-style: none;
-    text-align: left;
-  }
-  nav li::before {
-  content: none;
-  }
-  nav a{
-    display: block;
-    padding: 1.1rem ;
-    background-color: #fdf8f8;
-    text-decoration: none;
-    border-radius: 10px;
-    border-color: #a66;
-    border-style: solid;
-    border-width: 2px;
-    font-size: 15px;
-    font-weight: bold;
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+.navbar {
+    background-color: yellow;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 15px;
     text-align: center;
-
-  }
+    font-weight: bold;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.fact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.fact img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.fact p {
+    margin-top: 10px;
+    text-align: center;
+}
+.footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+/* Pseudo-classes and elements */
+.fact:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.fact::before {
+    content: "🔥 ";
+    font-size: 20px;
+}
+.navbar a:hover {
+    color: red;
+}
+.navbar a:active {
+    color: blue;
+}
+.footer::after {
+    content: " Stay safe!";
+}
+@media (max-width: 600px) {
+    .fact {
+        width: 100%;
+    }
+    .fact img {
+        height: 150px;
+    }
+}
