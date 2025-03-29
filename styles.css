@@ -269,6 +269,7 @@ body {
   .container {
     grid-template-columns: 1fr;
     padding: 20px;
+    gap: 30px;
   }
 
   .fact img {
@@ -286,16 +287,22 @@ body {
   }
 
   .banner {
-    height: 230px;
+    height: 220px;
   }
 
+  .banner-overlay {
+    max-width: 80%;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.4); 
+    border-radius: 5px;
+  }
   .banner-overlay h1 {
-    font-size: 22px;
-    margin-bottom: 10px;
+    font-size: 18px;
+    margin-bottom: 5px;
   }
 
   .banner-overlay p {
-    font-size: 13px;
-    line-height: 1.4;
+    font-size: 11px;
+    line-height: 1.2;
   }
 }
