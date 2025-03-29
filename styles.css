@@ -4,41 +4,11 @@
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
 }
-/*mobile view*/
-@media (max-width: 600px) {
-  .container {
-    grid-template-columns: 1fr;
-    padding: 20px;
-  }
-
-  .fact img {
-    height: 150px;
-  }
-
-  .navbar {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .nav-icons {
-    margin-top: 0;
-  }
-
-  .banner {
-    height: 250px;
-  }
-
-  .banner-overlay h1 {
-    font-size: 22px;
-    margin-bottom: 10px;
-  }
-
-  .banner-overlay p {
-    font-size: 13px;
-    line-height: 1.4;
-  }
+/*bug fix text*/
+html, body {
+  overflow-x: hidden;
 }
+/*bug fix text*/
 
 
 body {
@@ -292,4 +262,40 @@ body {
 .banner-overlay p {
   font-size:  16px;
   line-height: 1.6;
+}
+
+/*mobile view*/
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .fact img {
+    height: 150px;
+  }
+
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-icons {
+    margin-top: 0;
+  }
+
+  .banner {
+    height: 230px;
+  }
+
+  .banner-overlay h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .banner-overlay p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
 }
