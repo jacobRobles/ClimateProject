@@ -46,21 +46,15 @@ img, .container, .banner, .fact {
     margin-top: 10px;
     text-align: center;
 }
-.footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 20px;
-}
 /* Pseudo-classes and elements */
 .fact:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
+  transform: scale(1.05);
+  transition: 0.3s;
 }
+
 .fact::before {
-    content: "🔥 ";
-    font-size: 20px;
+  content: "🔥 "; /*could probably change this..no idea yet tho*/
+  font-size: 20px;
 }
 .navbar a:hover {
     color: red;
@@ -119,32 +113,6 @@ img, .container, .banner, .fact {
   color: #d62828;
 }
 
-
-
-.fact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: white;
-  padding: 20px;
-  margin: 10px;
-  width: 90%;
-  max-width: 600px;
-  border-radius:  10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) ;
-}
-
-.fact img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover ;
-  border-radius: 8px;
-}
-
-.fact p {
-  margin-top: 10px;
-  text-align: center;
-}
 /*detailed footer css*/
 .footer {
   background: #1a1a1a;
@@ -193,21 +161,6 @@ img, .container, .banner, .fact {
 
 .social-icons a:hover {
   color: white ;
-}
-
-/* the psuedo-classes and elements */
-.fact:hover {
-  transform: scale(1.05);
-  transition: 0.3s;
-}
-
-.fact::before {
-  content: "🔥 "; /*could probably change this..no idea yet tho*/
-  font-size: 20px;
-}
-
-.footer::after {
-  content: " Stay safe!";
 }
 
 /*icon link sizes*/
