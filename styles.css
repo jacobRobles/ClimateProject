@@ -215,7 +215,7 @@ img, .container, .banner, .fact {
     gap: 30px;
   }
   
-  .facts {
+  .fact {
     margin-left: auto;
     margin-right: auto;
   }
