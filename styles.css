@@ -80,6 +80,8 @@ img, .container, .banner, .fact {
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.5px;
+  grid-column: 2;
+  text-align: center;
   color: #222222;
   border-bottom: 3px solid #d62828;
   padding-bottom: 4px;
@@ -87,17 +89,20 @@ img, .container, .banner, .fact {
 
 /* This code is for the sticky header */
 .navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #f9c74f;
+  position: sticky;
+  top: 0;
+  width: 100%;
   padding: 15px 30px;
   font-weight: bold;
+  z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.properFormat{
+  width: 120px;
 }
 
 
@@ -279,16 +284,14 @@ img, .container, .banner, .fact {
   }
 
   .banner-overlay {
-    position: absolute;
-    inset: 0; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;     
-    padding: 15px;
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
     background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 0;
-    text-align: center;
+    margin-top: -130px;
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
   }
   .banner-overlay h1 {
     font-size: 18px;
