@@ -50,10 +50,7 @@ img, .container, .banner, .fact {
   transition: 0.3s;
 }
 
-.fact::before {
-  content: "🔥 "; /*could probably change this..no idea yet tho*/
-  font-size: 20px;
-}
+/* trial */
 .navbar a:hover {
     color: red;
 }
