@@ -19,7 +19,7 @@ A simple, responsive website that shares key facts about the 2025 LA wildfires.
 
 ## Live Site
 
-[https://jacobrobles.github.io/ClimateProject/](#) <!-- Add your live link if deployed -->
+https://jacobrobles.github.io/ClimateProject/ <!-- Add your live link if deployed -->
 
 ## How to Use
 
