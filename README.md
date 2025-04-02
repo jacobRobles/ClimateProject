@@ -4,11 +4,13 @@ A simple, responsive website that shares key facts about the 2025 LA wildfires.
 
 ## Features
 
-- Sticky navbar
-- Grid layout with fire facts
-- Banner with overlay text
-- Responsive design for mobile
-- Footer with social links
+- Sticky navigation bar
+- Eye-catching banner with overlay
+- Grid layout with responsive facts and images
+- Footer with social and repo links
+- Hover effects and interactive icons
+- Mobile-friendly layout
+- 8+ pseudo-classes/pseudo-elements
 
 ## Built With
 
