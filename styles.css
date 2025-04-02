@@ -60,7 +60,8 @@ img, .container, .banner, .fact {
     content: " Stay safe!";
 }
 
-.logo-text:hover {
+.logo-text:hover,
+.logo-text:active {
   color: #d62828;
   letter-spacing: 1px;
   cursor: pointer;
